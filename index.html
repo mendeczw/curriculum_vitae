@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio BI | William Méndez</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: #f6f7f9;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #f2f3f6);
+      border: 1px solid #e6e7ea;
+    }
+
+    .tag {
+      border: 1px solid #e6e7ea;
+      background: #fff;
+      padding: .35rem .6rem;
+      border-radius: 999px;
+      font-size: .9rem;
+    }
+
+    .cardx {
+      background: #fff;
+      border: 1px solid #e6e7ea;
+      border-radius: 16px;
+      padding: 16px;
+      height: 100%;
+    }
+
+    .img-frame {
+      border: 1px solid #e6e7ea;
+      border-radius: 14px;
+      background: #fff;
+      padding: 10px;
+    }
+
+    .section-title {
+      letter-spacing: .3px;
+    }
+
+    .small-muted {
+      color: #6c757d;
+      font-size: .95rem;
+    }
+
+    .kpi-bullet li {
+      margin-bottom: .35rem;
+    }
+
+    .shadow-soft {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    }
+
+    .btn-round {
+      border-radius: 14px;
+    }
+
+    .anchor-offset {
+      scroll-margin-top: 90px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#inicio">Portafolio BI</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#tarjetas">Tarjetas de Crédito</a></li>
+          <li class="nav-item"><a class="nav-link" href="#callcenter">Call Center</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnología</a></li>
+          <li class="nav-item"><a class="nav-link" href="#autor">Autor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="py-5">
+    <div class="container">
+      <div class="hero rounded-4 p-4 p-md-5 shadow-soft">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge text-bg-danger rounded-pill px-3 py-2 mb-3">
+              Business Intelligence • Call Center • Ventas • Bases de Datos
+            </span>
+
+            <h1 class="display-6 fw-bold mb-3">
+              Dashboards Operativos y Comerciales
+            </h1>
+
+            <p class="lead mb-4">
+              Portafolio de tableros orientados a control de operación y ventas: efectividad de bases,
+              tendencias semanales, KPIs diarios, productividad por asesor (VPO/BPO), cumplimiento de metas
+              y suite de tiempos para Call Center. Todo con enfoque de datos: calidad, trazabilidad,
+              consistencia y toma de decisiones.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Excel / BI</span>
+              <span class="tag">Modelado de datos</span>
+              <span class="tag">KPIs</span>
+              <span class="tag">Automatización</span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-dark btn-lg btn-round" href="#tarjetas">Ver Dashboard Tarjetas</a>
+
+              
+              <a class="btn btn-outline-dark btn-lg btn-round" href="cv.pdf" download>
+                Descargar Currículum
+              </a>
+            </div>
+
+            <p class="small-muted mt-3 mb-0">
+              <!-- NAV -->
+              
+              <strong>index.html</strong>.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="img-frame shadow-soft">
+              <img src="img/efectividaddebases.jpg" class="img-fluid rounded-4"
+                alt="Dashboard Tarjetas de Crédito - Efectividad de bases" />
+            </div>
+            <p class="small-muted mt-2 mb-0">
+              Dashboard Tarjetas de Crédito: efectividad de bases, contactabilidad y penetración.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================= -->
+  <!-- DASHBOARD TARJETAS DE CRÉDITO EXPLICACION-->
+  <!-- ========================================= -->
+  <section id="tarjetas" class="py-5 anchor-offset">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+        <div>
+          <h2 class="h3 fw-bold section-title mb-1">Dashboard Tarjetas de Crédito</h2>
+          <p class="text-secondary mb-0">
+            Tablero comercial para medir calidad de base, gestión, tendencias y cumplimiento de metas.
+          </p>
+        </div>
+        <span class="badge text-bg-secondary rounded-pill px-3 py-2">
+          Ventas • Contactabilidad • Conversión • Penetración
+        </span>
+      </div>
+
+      <!-- OBJETIVO + IMPORTANCIA -->
+      <div class="row g-4 mb-4">
+        <div class="col-lg-8">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">¿Para qué sirve?</h3>
+            <ul class="kpi-bullet mb-0">
+              <li><strong>Medir efectividad de la base:</strong> qué tanto de la base realmente se logra contactar y
+                gestionar.</li>
+              <li><strong>Detectar fuga de gestión:</strong> no contactados, no válidos, no aplica, y dónde se pierde el
+                esfuerzo.</li>
+              <li><strong>Controlar resultados:</strong> ventas, conversión y penetración por campaña/semana/día.</li>
+              <li><strong>Priorizar campañas:</strong> comparar bases y elegir dónde invertir tiempo para mejorar
+                retorno.</li>
+              <li><strong>Gestión operativa real:</strong> seguimiento semanal y diario para ajustar estrategia.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">Importancia</h3>
+            <p class="mb-2">
+              Este tablero convierte datos de gestión en decisiones: mejora la asignación de recursos,
+              sube la conversión y reduce el desperdicio de tiempo en bases de baja calidad.
+            </p>
+            <p class="mb-0">
+              En términos de negocio: <strong>controla el embudo completo</strong> desde registros recorridos
+              hasta ventas y penetración.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANTALLAS TARJETAS -->
+      <div class="row g-4">
+        <!-- 1) EFECTIVIDAD DE BASES -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6">
+                <h3 class="h5 fw-bold mb-2">1) Efectividad de bases de datos</h3>
+                <p class="text-secondary mb-3">
+                  Vista central para evaluar la calidad real de las bases y la gestión por campaña/semana/día.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>% Contactabilidad:</strong> qué proporción de registros se logra contactar.</li>
+                  <li><strong>% Contacto efectivo:</strong> contactos que realmente avanzan (calidad del contacto).</li>
+                  <li><strong>% Penetración:</strong> ventas sobre base recorrida (impacto real de la gestión).</li>
+                  <li><strong>Gestión por semana (Y/N):</strong> tendencia del volumen gestionado semanalmente.</li>
+                  <li><strong>Ranking por campaña:</strong> registros recorridos, ventas y penetración para priorizar.
+                  </li>
+                </ul>
+
+                <p class="mb-0">
+                  Esta pantalla te dice dónde está la oportunidad: bases que convierten y bases que solo consumen
+                  tiempo.
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="img-frame shadow-soft">
+                  <img src="img/efectividaddebases.jpg" class="img-fluid rounded-4"
+                    alt="Efectividad de bases de datos" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  Comparativo de campañas: registros, ventas y % penetración.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2) TENDENCIA SEMANAL -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <h3 class="h5 fw-bold mb-2">2) Tendencia de venta semanal</h3>
+                <p class="text-secondary mb-3">
+                  Panel de series temporales para ver evolución semanal del embudo. Ideal para explicar resultados a
+                  gerencia.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>Registros recorridos:</strong> intensidad de gestión (volumen).</li>
+                  <li><strong>Contactados y contacto efectivo:</strong> calidad del esfuerzo comercial.</li>
+                  <li><strong>No contactados / no válido:</strong> dónde se rompe el flujo.</li>
+                  <li><strong>Ventas:</strong> comportamiento del cierre.</li>
+                  <li><strong>% Contactabilidad / % Contacto efectivo / Conversión:</strong> indicadores clave de
+                    eficiencia.</li>
+                </ul>
+
+                <p class="mb-0">
+                  Esta vista permite detectar semanas con caída por base mala, baja gestión o baja efectividad.
+                </p>
+              </div>
+
+              <div class="col-lg-6 order-lg-1">
+                <div class="img-frame shadow-soft">
+                  <img src="img/tendenciasemanal.jpg" class="img-fluid rounded-4" alt="Tendencia de venta semanal" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  Evolutivo semanal del embudo y ventas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3) INDICADORES GENERALES / DIARIOS -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6">
+                <h3 class="h5 fw-bold mb-2">3) Indicadores generales (diario / corte)</h3>
+                <p class="text-secondary mb-3">
+                  Vista ejecutiva de KPIs principales para un corte específico. Sirve para “cómo vamos hoy”.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>Registros recorridos:</strong> base trabajada.</li>
+                  <li><strong>Contactados / Contacto efectivo:</strong> nivel real de alcance.</li>
+                  <li><strong>Ventas:</strong> resultado final.</li>
+                  <li><strong>% Contacto y % Contacto efectivo:</strong> eficiencia de gestión.</li>
+                  <li><strong>Conversión y % Penetración:</strong> efectividad de cierre vs base.</li>
+                </ul>
+
+                <p class="mb-0">
+                  Aquí se ve si el problema es volumen, contacto o conversión. Es diagnóstico rápido.
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="img-frame shadow-soft">
+                  <img src="img/indicadoresdiarios.jpg" class="img-fluid rounded-4"
+                    alt="Indicadores generales diarios" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  KPIs de gestión y resultado en un vistazo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4) EFECTIVIDAD POR ASESOR -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <h3 class="h5 fw-bold mb-2">4) Efectividad por asesor</h3>
+                <p class="text-secondary mb-3">
+                  Análisis por agente con filtros por fecha y tipo de base. Sirve para control de productividad y
+                  calidad individual.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>Spin Rate / Registros recorridos:</strong> ritmo de gestión.</li>
+                  <li><strong>Contactados / Contacto efectivo:</strong> capacidad real de avance.</li>
+                  <li><strong>No contactados / No válido / No aplica:</strong> depuración y calidad de base.</li>
+                  <li><strong>Conversión y penetración:</strong> efectividad comercial por asesor.</li>
+                  <li><strong>Cuartil:</strong> clasificación del desempeño para coaching y control.</li>
+                </ul>
+
+                <p class="mb-0">
+                  Esta pantalla separa “mucha gestión” de “gestión efectiva”. Es clave para manejo de equipo.
+                </p>
+              </div>
+
+              <div class="col-lg-6 order-lg-1">
+                <div class="img-frame shadow-soft">
+                  <img src="img/efectividad_por_asesor.jpg" class="img-fluid rounded-4" alt="Efectividad por asesor" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  Productividad y efectividad individual (por asesor).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5) VENTAS POR OPERADOR (BPO/VPO) -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6">
+                <h3 class="h5 fw-bold mb-2">5) Ventas por operador (BPO / VPO)</h3>
+                <p class="text-secondary mb-3">
+                  Control del rendimiento por operador con metas, avance y comparación semanal.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>VPO/BPO diario:</strong> producción promedio por día (monto o unidades según definición).
+                  </li>
+                  <li><strong>Meta a la fecha:</strong> objetivo acumulado.</li>
+                  <li><strong>Resultados a la fecha:</strong> avance real.</li>
+                  <li><strong>Cuartil:</strong> ranking del operador.</li>
+                  <li><strong>Semanas #06 y #07:</strong> comparación de ritmo y cumplimiento.</li>
+                </ul>
+
+                <p class="mb-0">
+                  Esta vista es la que permite decir: quién está sosteniendo la operación y quién necesita intervención.
+                </p>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="img-frame shadow-soft">
+                  <img src="img/bpo.jpg" class="img-fluid rounded-4" alt="Ventas por operador BPO/VPO" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  Productividad por operador y comparación semanal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6) CUMPLIMIENTO META -->
+        <div class="col-lg-12">
+          <div class="cardx shadow-soft">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <h3 class="h5 fw-bold mb-2">6) Cumplimiento de Meta General</h3>
+                <p class="text-secondary mb-3">
+                  Vista ejecutiva para seguimiento diario del mes: meta, logro, proyección y gap.
+                </p>
+
+                <ul class="kpi-bullet">
+                  <li><strong>Fecha corte:</strong> hasta dónde llegan los datos.</li>
+                  <li><strong>Días gestión / días faltantes:</strong> control del ritmo del mes.</li>
+                  <li><strong>Meta mes vs logro:</strong> avance real.</li>
+                  <li><strong>% cumplimiento:</strong> lectura rápida del estado.</li>
+                  <li><strong>Proyección de cierre:</strong> estimación si se mantiene el ritmo.</li>
+                  <li><strong>GAP:</strong> lo que falta o lo que sobra.</li>
+                </ul>
+
+                <p class="mb-0">
+                  Es el tablero que se usa para dirección/gerencia: “vamos a cumplir o no, y por cuánto”.
+                </p>
+              </div>
+
+              <div class="col-lg-6 order-lg-1">
+                <div class="img-frame shadow-soft">
+                  <img src="img/cumplimientometa.jpg" class="img-fluid rounded-4" alt="Cumplimiento de Meta General" />
+                </div>
+                <p class="small-muted mt-2 mb-0">
+                  Control del avance y proyección de cierre del mes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- ========================================= -->
+  <!-- CALL CENTER - SUITE INTERACCIONES -->
+  <!-- ========================================= -->
+  <section id="callcenter" class="py-5 bg-white border-top anchor-offset">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+        <div>
+          <h2 class="h3 fw-bold section-title mb-1">Suite Interacciones – Call Center</h2>
+          <p class="text-secondary mb-0">
+            Control de operación por estados del agente, intervalos horarios, SLA, tiempos de espera y TMO.
+          </p>
+        </div>
+        <span class="badge text-bg-secondary rounded-pill px-3 py-2">
+          SLA • TMO • Tiempo de espera • Estados
+        </span>
+      </div>
+
+      <div class="row g-4">
+        <!-- Estado del agente -->
+        <div class="col-lg-6">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">Tiempos por Estado del Agente</h3>
+            <p class="text-secondary mb-3">
+              Distribución de la jornada por usuario: disponible, en llamada, descanso, capacitación, baño y fin de
+              turno.
+              Ideal para adherencia, productividad y control operativo.
+            </p>
+            <div class="img-frame">
+              <img src="img/tiempo_por_estado.jpg" class="img-fluid rounded-4" alt="Tiempos por Estado del Agente" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Intervalos diario -->
+        <div class="col-lg-6">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">Intervalos Suite – Diario</h3>
+            <p class="text-secondary mb-3">
+              Análisis por hora: llamadas entrantes, casos atendidos, nivel de servicio, tiempo de espera y TMO.
+              Permite detectar picos y reforzar horarios.
+            </p>
+            <div class="img-frame">
+              <img src="img/intervalo.jpg" class="img-fluid rounded-4" alt="Intervalos Suite Diario" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SLA por usuario -->
+        <div class="col-lg-6">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">SLA y tiempos por usuario</h3>
+            <p class="text-secondary mb-3">
+              Casos atendidos, en meta, nivel de servicio, tiempo de espera y tiempo total. Útil para ranking y control.
+            </p>
+            <div class="img-frame">
+              <img src="img/interva-.jpg" class="img-fluid rounded-4" alt="SLA por usuario" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen mensual -->
+        <div class="col-lg-6">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">Resumen ejecutivo mensual</h3>
+            <p class="text-secondary mb-3">
+              KPIs del mes: llamadas entrantes, casos atendidos, en meta, nivel de servicio, tiempo de espera y TMO.
+            </p>
+            <div class="img-frame">
+              <img src="img/resumensuit_1.jpg" class="img-fluid rounded-4" alt="Resumen mensual suite" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- TECNOLOGÍA -->
+  <!-- ========================================= -->
+  <section id="tecnologia" class="py-5 anchor-offset">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="cardx shadow-soft">
+            <h2 class="h4 fw-bold mb-2">Tecnología y enfoque analítico</h2>
+            <p class="mb-3">
+              Estos tableros no son “solo gráficos”. Detrás hay trabajo completo de datos:
+              extracción, depuración, normalización, modelado y construcción de KPIs.
+            </p>
+            <ul class="kpi-bullet mb-0">
+              <li><strong>SQL:</strong> consultas, joins, consolidación, reglas de negocio, segmentación.</li>
+              <li><strong>Python:</strong> automatización, validaciones, limpieza, análisis y soporte a procesos.</li>
+              <li><strong>Excel/BI:</strong> modelado, métricas, visualización y control operativo.</li>
+              <li><strong>Enfoque:</strong> trazabilidad, consistencia, rendimiento y toma de decisiones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="cardx shadow-soft">
+            <h3 class="h5 fw-bold mb-2">Resultado final</h3>
+            <p class="mb-0">
+              Un sistema de control comercial y operativo que mide el embudo completo:
+              <strong>base → contacto → efectividad → conversión → ventas → cumplimiento</strong>,
+              y en Call Center: <strong>estados → intervalos → SLA → espera → TMO</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================= -->
+  <!-- AUTOR -->
+  <!-- ========================================= -->
+  <section id="autor" class="py-5 bg-white border-top anchor-offset">
+    <div class="container">
+      <div class="cardx shadow-soft">
+        <h2 class="h4 fw-bold mb-2">Desarrollado por</h2>
+        <p class="mb-1">
+          <strong>William Méndez</strong> – Analista de Bases de Datos
+        </p>
+        <p class="text-secondary mb-3">
+          Desarrollo de dashboards, automatización y analítica de datos para operación y ventas.
+          Uso Python, SQL y herramientas de BI para convertir datos en decisiones.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel Avanzado</span>
+          <span class="tag">BI / KPIs</span>
+          <span class="tag">Modelado de datos</span>
+          <span class="tag">Automatización</span>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- ✅ Cambiá el nombre si tu CV se llama distinto -->
+        <a class="btn btn-dark btn-lg btn-round" href="cv.pdf" download>
+          Descargar Currículum
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <div>
+        <div class="fw-semibold">Portafolio BI</div>
+        <div class="text-white-50">Dashboards operativos y comerciales</div>
+      </div>
+      <div class="text-white-50">© <span id="y"></span> William Méndez</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
