@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>William Dennis Méndez Cerdas | CV</title>
+  <meta name="description" content="<meta name=" description"
+    content="CV profesional de William Dennis Méndez Cerdas, Analista Senior WFM y BI con más de 15 años en banca y Contact Center. Especialista en análisis de efectividad de bases, procesamiento de más de 500.000 registros mensuales, automatización avanzada en Excel/VBA y desarrollo de dashboards estratégicos en Power BI.">
+  
+  <!-- Curriculum Vitae de William Mendez -->
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0B1F3B;
+      --blue: #0B5ED7;
+      --blue2: #0A58CA;
+      --ink: #0f172a;
+      --muted: #475569;
+      --card: #ffffff;
+      --line: #e2e8f0;
+      --shadow: 0 16px 40px rgba(2, 6, 23, .10);
+      --radius: 18px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(1100px 520px at 12% -10%, rgba(11, 94, 215, .18), transparent 60%),
+        radial-gradient(1100px 520px at 88% 0%, rgba(11, 31, 59, .18), transparent 55%),
+        linear-gradient(180deg, #f7fbff 0%, #f3f7ff 60%, #f7fbff 100%);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+      padding-top: 84px;
+      /* espacio para navbar fija */
+    }
+
+    /* Para que los títulos no queden tapados por el navbar */
+    section {
+      scroll-margin-top: 100px;
+    }
+
+    /* NAVBAR */
+    .navx {
+      background: linear-gradient(135deg, var(--navy) 0%, #0C2F66 45%, var(--blue) 100%);
+      box-shadow: 0 14px 30px rgba(2, 6, 23, .18);
+    }
+
+    .nav-link {
+      opacity: .95;
+    }
+
+    .nav-link:hover {
+      opacity: 1;
+    }
+
+    /* Fondo y formato del menú desplegado en móvil */
+    @media (max-width: 991.98px) {
+      body {
+        padding-top: 76px;
+      }
+
+      .navbar-collapse {
+        background: rgba(11, 31, 59, .98);
+        border-radius: 16px;
+        padding: .9rem;
+        margin-top: .75rem;
+        box-shadow: 0 16px 40px rgba(2, 6, 23, .25);
+      }
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #0C2F66 40%, var(--blue) 100%);
+      color: #fff;
+      border-radius: calc(var(--radius) + 10px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -60px -60px auto auto;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .26), transparent 60%);
+      transform: rotate(12deg);
+    }
+
+    .badge-soft {
+      background: rgba(234, 242, 255, .16);
+      border: 1px solid rgba(255, 255, 255, .22);
+      color: #fff;
+      padding: .45rem .7rem;
+      border-radius: 999px;
+      font-size: .9rem;
+    }
+
+    /* CARDS */
+    .cardx {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 24px rgba(2, 6, 23, .06);
+    }
+
+    .section-title {
+      font-weight: 800;
+      letter-spacing: .2px;
+      color: var(--navy);
+      margin-bottom: .6rem;
+    }
+
+    .small-muted {
+      color: var(--muted);
+    }
+
+    /* FOTO */
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 6px solid rgba(255, 255, 255, .5);
+      object-fit: cover;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+      background: rgba(255, 255, 255, .15);
+    }
+
+    @media (max-width: 576px) {
+      .photo {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #e8efff;
+      padding-left: 1rem;
+      margin-left: .35rem;
+    }
+
+    .tl-item {
+      position: relative;
+      padding: 0 0 1.2rem 0;
+    }
+
+    .tl-item::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--blue);
+      border-radius: 999px;
+      position: absolute;
+      left: -1.52rem;
+      top: .35rem;
+      box-shadow: 0 0 0 4px rgba(11, 94, 215, .18);
+    }
+
+    .job-title {
+      font-weight: 800;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .job-meta {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* Pills */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .40rem .70rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fbfdff;
+      color: var(--ink);
+      font-size: .92rem;
+      margin: .22rem .22rem 0 0;
+      white-space: nowrap;
+    }
+
+    .pill i {
+      color: var(--blue2);
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    a {
+      color: var(--blue2);
+    }
+
+    a:hover {
+      color: var(--blue);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding-top: 0;
+      }
+
+      .navx {
+        display: none;
+      }
+
+      .hero {
+        box-shadow: none;
+      }
+
+      .cardx {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR FIXED TOP + HAMBURGUESA -->
+  <nav class="navbar navbar-expand-lg navbar-dark navx fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">
+        <i class="bi bi-person-badge me-2"></i>CV William Méndez
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#resumen">Resumen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="d-flex gap-2 ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-light" href="CV_William_Mendez.pdf" download="CV_William_Mendez_ext.pdf">
+            <i class="bi bi-download me-2"></i>Descargar PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="top" class="container py-4 py-lg-5">
+
+    <!-- HERO -->
+    <section class="hero p-4 p-lg-5 mb-4">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-8">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge-soft"><i class="bi bi-graph-up-arrow me-1"></i> Analista WFM & BI</span>
+            <span class="badge-soft"><i class="bi bi-building me-1"></i> Contact Center Bancario</span>
+            <span class="badge-soft"><i class="bi bi-database-check me-1"></i> SQL • Excel VBA • Power BI •
+              Python</span>
+          </div>
+
+          <h1 class="display-6 fw-bold mb-1">William Dennis Méndez Cerdas</h1>
+          <p class="lead mb-3" style="max-width: 58ch;">
+            Analista Senior con +15 años en banca y Contact Center. Enfoque en efectividad de bases, KPIs,
+            automatización de reportes
+            y dashboards ejecutivos para toma de decisiones.
+          </p>
+
+          <div class="row g-2">
+            <div class="col-12 col-md-8">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>San José, Costa Rica</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-1">
+                <i class="bi bi-envelope-fill"></i>
+                <a class="text-white text-decoration-none" href="mailto:mendezcw@yahoo.es">mendezcw@yahoo.es</a>
+              </div>
+              <div class="d-flex align-items-center gap-2 mt-1">
+                <i class="bi bi-telephone-fill"></i>
+                <a class="text-white text-decoration-none" href="tel:+50685369305">(+506) 8536-9305</a>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-outline-light" href="CV_William_Mendez.pdf" download="CV_William_Mendez_ext.pdf">
+                  <i class="bi bi-file-earmark-pdf me-2"></i>Descargar CV (PDF)
+                </a>
+                <a class="btn btn-light" href="#contacto">
+                  <i class="bi bi-send me-2"></i>Contactarme
+                </a>
+              </div>
+
+              <p class="mt-3 mb-0 small" style="opacity:.85;">
+                <i class="bi bi-shield-check me-1"></i>
+                Disponible para posiciones WFM / BI • Reportería ejecutiva • Automatización
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO CENTRADA -->
+        <div class="col-12 col-lg-4 text-center">
+          <img class="photo" src="foto.jpg" alt="Foto de William Dennis Méndez Cerdas" />
+          <div class="small mt-2" style="opacity:.85;">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g-4">
+      <!-- LEFT -->
+      <div class="col-12 col-lg-8">
+
+        <section id="resumen" class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Resumen profesional</h2>
+          <p class="mb-0 small-muted">
+            Especialista en análisis operativo y comercial para Contact Center bancario: efectividad de bases,
+            contactabilidad,
+            conversión, ocupación, headcount y productividad. Desarrollo de herramientas en Excel/VBA para automatizar
+            procesos,
+            reducir tiempos y mejorar la calidad del dato. Construcción de dashboards en Power BI para seguimiento
+            gerencial.
+          </p>
+        </section>
+
+        <section id="experiencia" class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Experiencia</h2>
+
+          <div class="timeline mt-3">
+            <div class="tl-item">
+              <p class="job-title">Grupo Prides — Analista de Información WFM</p>
+              <div class="job-meta mb-2">Julio 2020 – Febrero 2023</div>
+              <ul class="mb-0 small-muted">
+                <li>Monitoreo y análisis de KPIs operativos y comerciales en Contact Center.</li>
+                <li>Control de ocupación, headcount, productividad por asesor/supervisor y cumplimiento de meta.</li>
+                <li>Reportes diarios/semanales/mensuales para jefaturas y gerencia.</li>
+                <li>Automatización de reportes operativos para reducir tiempos y errores.</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <p class="job-title">Consorcio Arcersa RDC Inter S.A — Analista de Bases de Datos / BI</p>
+              <div class="job-meta mb-2">Junio 2018 – Febrero 2019</div>
+              <ul class="mb-0 small-muted">
+                <li>Dashboards comerciales y seguimiento de productividad por equipo/campaña.</li>
+                <li>Depuración, estructuración y segmentación de bases de datos para campañas.</li>
+                <li><strong>Logro:</strong> creación de sistema capturador de redes sociales.</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <p class="job-title">Scotiabank Costa Rica — Analista de Datos (Área Comercial / Contact Center)</p>
+              <div class="job-meta mb-2">Octubre 2015 – Julio 2017</div>
+              <ul class="mb-0 small-muted">
+                <li>Reportes de efectividad de bases y desempeño para <strong>+300 asesores</strong>.</li>
+                <li>Procesamiento de bases superiores a <strong>500.000 registros mensuales</strong>.</li>
+                <li>Seguimiento de KPIs: contactabilidad, conversión, penetración y cumplimiento de meta.</li>
+                <li>Herramientas en <strong>Excel/VBA</strong> que redujeron <strong>60%</strong> el tiempo de
+                  consolidación.</li>
+                <li><strong>Logro:</strong> sistema recolector de preventa con mejora de <strong>40%</strong> en
+                  eficiencia operativa.</li>
+              </ul>
+            </div>
+
+            <div class="tl-item pb-0">
+              <p class="job-title">Citibank Costa Rica — Analista de Datos</p>
+              <div class="job-meta mb-2">Agosto 2006 – Noviembre 2012</div>
+              <ul class="mb-0 small-muted">
+                <li>Automatización de reportes de colocación y desembolsos para control gerencial.</li>
+                <li><strong>Logro:</strong> sistema de pagaré automatizado.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="proyectos" class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Proyectos y logros</h2>
+          <div class="row g-3 mt-1">
+            <div class="col-12 col-md-6">
+              <div class="p-3 border rounded-4 h-100" style="border-color: var(--line) !important;">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                  <strong>Automatización Excel/VBA</strong>
+                </div>
+                <p class="mb-0 small-muted">
+                  Herramientas internas para minimizar tiempos, estandarizar reportes y eliminar tareas manuales
+                  repetitivas.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="p-3 border rounded-4 h-100" style="border-color: var(--line) !important;">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="bi bi-bar-chart-fill"></i>
+                  <strong>Dashboards de BI</strong>
+                </div>
+                <p class="mb-0 small-muted">
+                  Tableros ejecutivos (Power BI) para seguimiento de KPIs, metas y productividad en Contact Center.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-12 col-lg-4">
+
+        <section id="habilidades" class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Competencias WFM / BI</h2>
+          <div class="mt-2">
+            <span class="pill"><i class="bi bi-check2-circle"></i> Efectividad de bases</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Contactabilidad</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Conversión</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Ocupación</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Headcount</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Cumplimiento de meta</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Productividad por asesor</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Reportería ejecutiva</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Automatización</span>
+            <span class="pill"><i class="bi bi-check2-circle"></i> Dashboards</span>
+          </div>
+        </section>
+
+        <section class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Herramientas</h2>
+          <ul class="mb-0 small-muted">
+            <li><strong>SQL Server</strong> (consultas, extracción y modelado)</li>
+            <li><strong>Excel Avanzado</strong> (tablas dinámicas, fórmulas avanzadas)</li>
+            <li><strong>VBA</strong> (automatización y herramientas internas)</li>
+            <li><strong>Power BI</strong> (modelado, DAX, visualización)</li>
+            <li><strong>Python</strong> (pandas, limpieza y análisis)</li>
+          </ul>
+        </section>
+
+        <section id="formacion" class="cardx p-4 mb-4">
+          <h2 class="section-title h4">Formación</h2>
+          <p class="mb-2"><strong>Técnico en Análisis de Bases de Datos</strong><br>
+            <span class="small-muted">Universidad Hispanoamericana (En curso)</span>
+          </p>
+
+          <hr class="my-3">
+
+          <p class="mb-2"><strong>ADEN International Business School</strong></p>
+          <ul class="mb-0 small-muted">
+            <li>Programa Especializado en Big Data and Business Analytics (23 jul 2024)</li>
+            <li>BI – Inteligencia de Negocios (jul 2024)</li>
+            <li>Cyberseguridad and Big Data (jul 2024)</li>
+            <li>Digital Transformation, Digital Strategy (may 2024)</li>
+            <li>Introducción al Big Data (jun 2024)</li>
+            <li>Introducción al Analytic and Big Data (jun 2024)</li>
+          </ul>
+        </section>
+
+        <section id="contacto" class="cardx p-4">
+          <h2 class="section-title h4">Contacto</h2>
+          <p class="small-muted mb-3">
+            Coordinemos entrevista o ampliamos información por correo o llamada.
+          </p>
+          <div class="d-grid gap-2">
+            <a class="btn btn-primary btn-lg" href="mailto:mendezcw@yahoo.es">
+              <i class="bi bi-envelope me-2"></i> Escribir correo
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="tel:+50685369305">
+              <i class="bi bi-telephone me-2"></i> Llamar
+            </a>
+            <a class="btn btn-light btn-lg" href="CV_William_Mendez.pdf" download="CV_William_Mendez_ext.pdf">
+              <i class="bi bi-file-earmark-pdf me-2"></i> Descargar PDF
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="footer text-center mt-4 mt-lg-5">
+      <span>© <span id="year"></span> William Dennis Méndez Cerdas — CV</span>
+      <span class="mx-2">•</span>
+      <span class="small-muted">Última actualización: 26 feb 2026</span>
+    </div>
+  </div>
+
+  <!-- Bootstrap bundle (incluye Collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Año -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Cerrar menú hamburguesa al tocar un link -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navMenu = document.getElementById("navMenu");
+      if (!navMenu) return;
+
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navMenu, { toggle: false });
+
+      navMenu.querySelectorAll("a.nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          if (navMenu.classList.contains("show")) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
